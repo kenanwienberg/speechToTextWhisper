@@ -1,0 +1,18 @@
+- Kabelalgorithmen liefern nicht immer die richtige Antwort, auch wenn man K sehr groß macht.
+- Die Wahrscheinlichkeit, dass das Ergebnis falsch ist, fällt exponentiell viel schneller ab und wird schnell sehr klein.
+- Es gibt keine absolute Sicherheit, dass das Ergebnis A mal B korrekt ist.
+- Die Größe des Kabels hat keinen direkten Einfluss auf das Ergebnis.
+- Es gibt eine andere Technik namens Las Vegas Algorithmen, die immer eine richtige Antwort liefern, aber möglicherweise viel Zeit benötigen.
+- Ein Beispiel für ein Las Vegas Algorithmus ist das Farbenproblem.
+- Das Farbenproblem besteht darin, verschiedene Fachabteilungen in einer Firma und ihre jeweiligen Arbeitsgruppen zu organisieren.
+- Jede Fachabteilung muss einen Experten oder eine Expertin in die Arbeitsgruppen schicken, wo ein schwarzer Punkt eingefahren ist.
+- Die Frage ist, ob es eine Gesamtordnung gibt, eine Abordnung für die Arbeitsgruppen, die keine reinen Herausforderungen haben.
+- Der Las Vegas Algorithmus arbeitet mit Zufall und färbt die Elemente von F gemäß Gleichverteilung blau oder rot.
+- Der Algorithmus testet, ob in jeder Zeile blaue oder rote Einträge vorkommen.
+- Wenn eine zulässige Farbe gefunden wird, ist der Algorithmus erfolgreich, sonst wird der Prozess wiederholt.
+- Es gibt eine Voraussetzung, dass R größer 2 sein muss, das bedeutet, dass in jeder Zeile mindestens 2 Farben vorhanden sein müssen.
+- Die Anzahl der unterschiedlichen Arbeitsgruppen sollte kleiner sein als 2 hoch R.
+- Wenn diese Voraussetzung erfüllt ist, kann gezeigt werden, dass es eine zulässige Farbe gibt und der Algorithmus im Mittel nach 2 Versuchen erfolgreich ist.
+- Die effiziente Konstruktion des Algorithmus besteht darin, eine Münze zu werfen, um die Farbe zu bestimmen.
+- Die Wahrscheinlichkeit, dass eine bestimmte Farbkombination auftritt, kann berechnet werden, indem die Anzahl der gewünschten Kombinationen durch die Gesamtzahl der möglichen Kombinationen geteilt wird.
+- Die Wahrscheinlichkeit, dass der Algorithmus nicht erfolgreich ist, kann ebenfalls berechnet werden.

@@ -1,0 +1,17 @@
+- Monte Carlo Algorithmen liefern immer eine Antwort, können aber nicht garantieren, dass diese Antwort korrekt ist.
+- Sie können in Situationen nützlich sein, in denen es akzeptabel ist, eine falsche Antwort zu erhalten und darauf zu reagieren.
+- Las Vegas Algorithmen hingegen liefern immer korrekte Antworten, können aber manchmal sehr lange dauern.
+- Ein Beispiel für die Anwendung von Monte Carlo Algorithmen ist der Gleichheitstest, bei dem überprüft wird, ob zwei Dinge gleich sind.
+- Bei der Überprüfung der Gleichheit von zwei N-Kreuz-N-Matrizen A und B mit einer Matrix C (A*B = C) muss für N Quadrat Elemente überprüft werden, ob sie alle gleich sind.
+- Der arithmetische Aufwand für diese Überprüfung ist in der Größenordnung von N hoch 3, was bei großen Matrizen zu einem erheblichen Aufwand führen kann.
+- Eine Möglichkeit, den Aufwand zu reduzieren, besteht darin, Zufallsvektoren zu verwenden und die Ergebnisse von A*B*X und C*X zu vergleichen.
+- Wenn A*B*X ungleich C*X ist, dann ist A*B ungleich C. Wenn A*B*X gleich C*X ist, könnte A*B gleich C sein, aber es könnte auch ungleich sein.
+- Der Aufwand für diese Methode ist in der Größenordnung von N Quadrat, was deutlich weniger ist als N hoch 3.
+- Ein Problem mit dieser Methode ist, dass sie eine falsche Antwort liefern kann, wenn A*B*X gleich C*X ist, aber A*B ungleich C ist.
+- Eine Möglichkeit, dieses Problem zu umgehen, besteht darin, mehrere Zufallsvektoren zu verwenden und die Ergebnisse zu vergleichen.
+- Der Freivalds-Algorithmus ist ein Beispiel für einen solchen Ansatz, bei dem eine Urne mit Kugeln verwendet wird, die durch die Matrizen A, B und C generiert werden.
+- Jede Kugel in der Urne repräsentiert einen Zufallsvektor und hat eine Farbe, die davon abhängt, ob A*B*X gleich C*X ist (grün) oder nicht (rot).
+- Wenn A*B ungleich C ist, dann gibt es mindestens eine rote Kugel in der Urne.
+- Der Freivalds-Algorithmus besteht darin, K Kugeln aus der Urne zu ziehen und zu überprüfen, ob alle Kugeln grün sind. Wenn ja, dann wird angenommen, dass A*B gleich C ist. Wenn mindestens eine Kugel rot ist, dann wird angenommen, dass A*B ungleich C ist.
+- Der arithmetische Aufwand für den Freivalds-Algorithmus ist in der Größenordnung von N Quadrat, und der Aufwand für das Vergleichen der Kugeln ist in der Größenordnung von K mal N.
+- Die Wahrscheinlichkeit, dass der Freivalds-Algorithmus eine falsche Antwort liefert, nimmt exponentiell mit der Anzahl der gezogenen Kugeln ab.

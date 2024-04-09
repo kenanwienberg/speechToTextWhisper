@@ -1,0 +1,8 @@
+- Stochastik ist ein wichtiges Thema im Bereich der Numerik und hat viele Anwendungen
+- Der Algorithmus von Freivald ist ein effizienter Las Vegas Algorithmus zur Lösung des Matrix-Multiplikationsproblems
+- Der Las Vegas Algorithmus verwendet Zufall und Test, um eine zulässige Lösung zu finden
+- Die Effizienz des Las Vegas Algorithmus liegt darin, dass er schnell eine Lösung findet und die Wahrscheinlichkeit für Erfolg exponentiell abnimmt
+- Der Algorithmus hat eine hohe Erfolgsrate und benötigt im Durchschnitt nur wenige Versuche, um eine Lösung zu finden
+- Die Wahrscheinlichkeit für eine erfolgreiche Lösung steigt mit der Anzahl der Versuche und liegt im Mittel bei weniger als 2 Versuchen
+- Die Wahrscheinlichkeit für eine erfolgreiche Lösung kann durch die geometrische Reihe berechnet werden
+- Der Las Vegas Algorithmus ist ein effizienter Ansatz zur Lösung komplexer Probleme in der Numerik
